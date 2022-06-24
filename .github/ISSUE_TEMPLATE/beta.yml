@@ -2,7 +2,16 @@ name: Beta
 description: Beta
 title: "Beta"
 labels: ["beta"]
+assignees:
+  - stehf
 body:
   - type: markdown
     attributes:
       value: Issue will be moved to another repo
+  - type: input
+    id: Test
+    attributes:
+      label: Test
+      description: "Enter some text"
+    validations:
+      required: true
