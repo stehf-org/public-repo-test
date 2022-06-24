@@ -1,0 +1,18 @@
+name: Transfer Issue & Create Stub
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  add-ghes-label:
+    runs-on: ubuntu-latest
+    name: Job to transfer issue to private repo
+    if: ${{ !github.event.issue.pull_request }}
+    steps:
+    - name: Transfer Issue & Create Stub
+      uses: lando/transfer-issue-action@v2
+      with:
+        token: ${{ secrets.TRANSFER_ISSUE_TOKEN }}
+        router: beta:private-issue-repo-tes
+        apply_label: "beta request"
+        create_stub: false
