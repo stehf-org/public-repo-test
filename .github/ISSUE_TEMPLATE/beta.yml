@@ -2,6 +2,8 @@ name: Beta
 description: Beta
 title: "Beta"
 labels: ["beta"]
+assignees:
+  - stehf
 body:
   - type: markdown
     attributes:
