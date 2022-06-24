@@ -14,4 +14,4 @@ jobs:
         token: ${{ secrets.BETA_TOKEN }}
         router: beta:private-issue-repo-test
         apply_label: "beta request"
-        create_stub: false
+        create_stub: true
