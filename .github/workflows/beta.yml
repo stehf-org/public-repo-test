@@ -12,6 +12,6 @@ jobs:
       uses: lando/transfer-issue-action@v2
       with:
         token: ${{ secrets.BETA_TOKEN }}
-        router: beta:private-issue-repo-tes
+        router: beta:private-issue-repo-test
         apply_label: "beta request"
         create_stub: false
