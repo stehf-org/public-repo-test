@@ -11,7 +11,7 @@ jobs:
     - name: Transfer Issue & Create Stub
       uses: lando/transfer-issue-action@v2
       with:
-        token: ${{ secrets.TRANSFER_ISSUE_TOKEN }}
+        token: ${{ secrets.BETA_TOKEN }}
         router: beta:private-issue-repo-tes
         apply_label: "beta request"
         create_stub: false
