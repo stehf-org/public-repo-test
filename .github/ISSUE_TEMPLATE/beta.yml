@@ -1,0 +1,8 @@
+name: Beta
+description: Beta
+title: "Beta"
+labels: ["beta"]
+body:
+  - type: markdown
+    attributes:
+      value: Issue will be moved to another repo
