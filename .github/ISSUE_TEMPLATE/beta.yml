@@ -6,6 +6,10 @@ body:
   - type: markdown
     attributes:
       value: Issue will be moved to another repo
- - type: label
-   attributes:
-    value: What's the issue?
+  - type: input
+    id: Test
+    attributes:
+      label: Test
+      description: "Enter some text"
+    validations:
+      required: true
