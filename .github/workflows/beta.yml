@@ -4,10 +4,9 @@ on:
     types: [opened, labeled]
 
 jobs:
-  add-ghes-label:
+  beta:
     runs-on: ubuntu-latest
     name: Job to transfer issue to private repo
-    if: ${{ !github.event.issue.pull_request }}
     steps:
     - name: Transfer Issue & Create Stub
       uses: lando/transfer-issue-action@v2
